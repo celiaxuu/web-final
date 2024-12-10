@@ -1,0 +1,111 @@
+.user-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.user-header {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.user-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.join-date {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 24px; 
+}
+
+.description-display {
+  margin-top: 20px;
+}
+
+.description-display p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.edit-button {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-button:hover {
+  background-color: #1991db;
+}
+
+.description-section {
+  margin-top: 20px;
+}
+
+.edit-description textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.edit-buttons button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit-buttons button:first-child {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+}
+
+.edit-buttons button:first-child:hover {
+  background-color: #1991db;
+}
+
+.edit-buttons button:last-child {
+  border: 1px solid #1da1f2;
+  background-color: white;
+  color: #1da1f2;
+}
+
+.edit-buttons button:last-child:hover {
+  background-color: #f8f9fa;
+}
+
+.user-posts {
+  margin-top: 30px;
+}
+
+.user-posts h2 {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
