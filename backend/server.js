@@ -7,7 +7,7 @@ const cors = require('cors');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 
-const mongoDBEndpoint = 'mongodb://localhost:27017/twitter_clone';
+const mongoDBEndpoint = 'mongodb+srv://hunter:banana2@seawebdevfall2021.ykjok.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(mongoDBEndpoint, { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'Error connecting to MongoDB:'));
@@ -16,7 +16,7 @@ db.once('open', function() {
 });
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://web-final-frontend.onrender.com',
     credentials: true
 }));
 app.use(express.json());

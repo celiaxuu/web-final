@@ -10,14 +10,14 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/users/isLoggedIn', {
+    fetch('https://web-final-backend.onrender.com/api/users/isLoggedIn', {
       credentials: 'include'
     })
       .then(res => res.json())
       .then(data => setUser(data.username))
       .catch(error => console.error('Error checking login status:', error));
 
-    fetch('http://localhost:8000/api/posts', {
+    fetch('https://web-final-backend.onrender.com/api/posts', {
       credentials: 'include'
     })
       .then(res => res.json())

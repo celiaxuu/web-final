@@ -19,7 +19,7 @@ export default function Register() {
         return;
       }
 
-      const res = await fetch('http://localhost:8000/api/users/register', {
+      const res = await fetch('https://web-final-backend.onrender.com/api/users/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

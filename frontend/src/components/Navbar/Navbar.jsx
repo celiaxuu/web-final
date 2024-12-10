@@ -7,7 +7,7 @@ export default function Navbar({ user }) {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/users/logOut', {
+      const response = await fetch('https://web-final-backend.onrender.com/api/users/logOut', {
         method: 'POST',
         credentials: 'include'
       });

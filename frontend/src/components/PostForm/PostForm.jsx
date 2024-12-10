@@ -8,7 +8,7 @@ export default function PostForm({ onPostCreated }) {
     e.preventDefault();
     if (!content.trim()) return;
 
-    const res = await fetch('http://localhost:8000/api/posts', {
+    const res = await fetch('https://web-final-backend.onrender.com/api/posts', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',

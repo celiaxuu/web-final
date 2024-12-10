@@ -17,7 +17,7 @@ export default function UserPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const loginResponse = await fetch('http://localhost:8000/api/users/isLoggedIn', {
+        const loginResponse = await fetch('https://web-final-backend.onrender.com/api/users/isLoggedIn', {
           credentials: 'include'
         });
         const loginData = await loginResponse.json();
@@ -27,7 +27,7 @@ export default function UserPage() {
           fetch(`http://localhost:8000/api/users/${username}`, { 
             credentials: 'include' 
           }),
-          fetch(`http://localhost:8000/api/users/${username}/posts`, { 
+          fetch(`https://web-final-backend.onrender.com/api/users/${username}/posts`, { 
             credentials: 'include' 
           })
         ]);
@@ -55,7 +55,7 @@ export default function UserPage() {
 
   const handleUpdateDescription = async () => {
     try {
-      const res = await fetch(`http://localhost:8000/api/users/${username}/description`, {
+      const res = await fetch(`https://web-final-backend.onrender.com/api/users/${username}/description`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'

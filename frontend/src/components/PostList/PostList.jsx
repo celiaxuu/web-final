@@ -8,7 +8,7 @@ export default function PostList({ posts, currentUser, onPostDeleted, onPostEdit
 
   const handleDelete = async (postId) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/posts/${postId}`, {
+      const response = await fetch(`https://web-final-backend.onrender.com/api/posts/${postId}`, {
         method: 'DELETE',
         credentials: 'include'
       });
@@ -22,7 +22,7 @@ export default function PostList({ posts, currentUser, onPostDeleted, onPostEdit
 
   const handleEdit = async (postId) => {
     try {
-      const response = await fetch(`http://localhost:8000/api/posts/${postId}`, {
+      const response = await fetch(`https://web-final-backend.onrender.com/api/posts/${postId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
