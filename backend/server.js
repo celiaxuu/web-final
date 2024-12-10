@@ -17,7 +17,9 @@ db.once('open', function() {
 
 app.use(cors({
     origin: 'https://web-final-frontend.onrender.com',
-    credentials: true
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type']
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

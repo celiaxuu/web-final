@@ -20,7 +20,12 @@ router.post('/register', async function(req, res) {
         });
 
         const token = jwt.sign(username, "HUNTERS_PASSWORD");
-        res.cookie("username", token);
+        res.cookie("username", token, {
+            httpOnly: true,
+            secure: true,
+            sameSite: 'none',
+            maxAge: 24 * 60 * 60 * 1000
+        });
         return res.send("User created successfully");
     
     } catch (e) {
