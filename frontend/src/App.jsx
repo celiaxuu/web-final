@@ -10,7 +10,8 @@ function App() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/users/isLoggedIn', {
+    
+    fetch('https://web-final-backend.onrender.com/api/users/isLoggedIn', {
       credentials: 'include'
     })
     .then(res => res.json())
